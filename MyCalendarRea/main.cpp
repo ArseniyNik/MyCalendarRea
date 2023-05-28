@@ -2,6 +2,7 @@
 #include <typeinfo>
 #include <map>
 #include <iomanip>
+#include <clocale>
 using namespace std;
 
 //Cписок мес€цев
@@ -88,7 +89,7 @@ int table_creation(int year, int month) {
 
 //√лавна€ функци€ дл€ начала программы
 int main() {
-    setlocale(LC_ALL, "RUS");
+    setlocale(LC_ALL, "Russian");
     //инициализации списка последних дней каждого мес€ца
     month_initialization();
     int month, year;
